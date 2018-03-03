@@ -1,0 +1,39 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": {
+    "/*": {
+      "target": "http://localhost:5000"
+    },
+    "/api/addStock": {
+      "target": "http://localhost:5000"
+    },
+    "/api/getStock": {
+      "target": "http://localhost:5000"
+    },
+    "/api/remove": {
+      "target": "http://localhost:5000"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.0.0",
+    "get-stock": "^1.0.3",
+    "glyphicons": "^0.2.0",
+    "google-stocks": "^2.0.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1",
+    "react-stockcharts": "^0.7.0",
+    "react-vis": "^1.8.1",
+    "socket.io-client": "^2.0.4",
+    "yahoo-finance": "^0.3.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
